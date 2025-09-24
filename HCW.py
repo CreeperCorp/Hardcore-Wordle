@@ -43,4 +43,4 @@ while (guesses > 0):
 if (score3 < 3):
     print('Better luck next time, you are not a master at wordle')
 else:
-    print('Congratulations... You are the wordle champion, and one of the luckiest people on earth')
+    print('Congratulations... You are a wordle master, and one of the luckiest people on earth')
