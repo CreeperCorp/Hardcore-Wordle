@@ -1,4 +1,5 @@
 import random
+import sys
 
 game3 = input('Do you want to play game 3?: ')
 
@@ -22,11 +23,8 @@ while (guesses > 0):
     guessedWord = input('Input a 5 letter word: ')
     guessedWordCharacters = list(guessedWord)
     guessedWordCharacters = len(guessedWordCharacters)
-    if (guessedWordCharacters == 5):
-        h = 'h'
-    else:
-        guesses = 0
-        print('Only 5 letter words')
+    if (guessedWordCharacters != 5):
+        sys.exit('Only 5 letter words')
     matches = findCommonCharacters(randomWord, guessedWord)
     print(f'The common characters are {matches}')
     guesses = guesses - 1
